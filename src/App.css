@@ -6,10 +6,23 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-right: 100px;
   color: azure;
+} 
+#add{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  margin: 20px; 
 }
-.body{
-  background-color: cadetblue;
+#buttonArea{
+  height: 80px; 
+} 
+  #button1{ 
+  display: flex; 
+  margin-top: 20px;
+  justify-items: center; 
+  margin-left: 100px;
 }

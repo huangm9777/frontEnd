@@ -11,19 +11,28 @@
 }
 .month, .year{
   position: relative;
-  bottom: -40px;
+  bottom: -20px;
   padding-left: 10px;
+  text-shadow:  0 0 3px black;
   
 }
 
 .delete-button{ 
-  color: red;
-  position: absolute;
-  justify-self: end;
+  color: red;  
+  position: relative;
+  top: 50%;
   text-shadow:  0 0 1px black;
   padding-left: 10px;
 }
 .delete-button:hover{ 
   cursor: pointer;
   transform: scale(1.5);
+}
+.destination{ 
+  display: flex; 
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+  margin-left: 80px;
+   
 }

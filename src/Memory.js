@@ -19,7 +19,14 @@ export function Memory(props){
     dispatch(enterEditMode(memory));
   }
   const onSave = () => {
-    dispatch(startSavingMemory(memory));
+    dispatch(startSavingMemory({
+    id: memory.id,
+    year,
+    month,
+    day,
+    message,
+
+    }));
   }
   const onCancel = () => {
     dispatch(leaveEditMode(memory));
@@ -40,9 +47,9 @@ export function Memory(props){
         <button id = "save-button"onClick = {onSave}>Save</button>
         <button id = "cancel-button"onClick = {onCancel}>Cancel</button>
       
+      
       </div>
-      <div className="memory-right">
-      </div>
+      <div className = "destination"></div>
     </div>
     
   );}
@@ -56,8 +63,11 @@ export function Memory(props){
         <span className = "month">{months[memory.month - 1]}  </span>
         
       </div>
-      <div className="memory-right">
-        {memory.message}
+      <div className="destination">
+      Departure:
+        {memory.message}&nbsp;
+      Arrival:
+        {memory.message2}
       </div>
     </div>
   );

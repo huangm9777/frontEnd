@@ -66,10 +66,9 @@ export function startDeletingMemory(memory){
     };
 }
 
-function checkForErrors(response)
-{ 
+function checkForErrors(response){ 
   if(!response.ok){
-    throw Error(`${response.status}: ${response.statusText}`)
+    throw Error(`${response.status}: ${response.statusText}`);
   }
   return response;
 }
@@ -110,8 +109,8 @@ export function startSavingMemory(memory) {
   };
 }
 
-export function startAddingMemory (year,month,day){
-  const memory = {year, month, day, message: ''};
+export function startAddingMemory (year,month,day,message,message2){
+  const memory = {year, month, day, message , message2};
   const options = {
     method: 'POST',
     headers: {

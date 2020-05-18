@@ -17,7 +17,7 @@ function reducer(state = initialState, action){
   case Action.FinishAddingMemory:
   return{
     ...state,
-    memories: [{...action.payload, isEditing: true}, ...state.memories],
+    memories: [action.payload, ...state.memories],
   };
   case Action.EnterEditMode:
   return{
