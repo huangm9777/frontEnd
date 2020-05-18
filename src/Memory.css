@@ -1,0 +1,29 @@
+.memory{
+  font-size: 28px;
+  border: 10px;
+  text-shadow:  0 0 1px black; 
+}
+
+.memory > .memory-left{
+  justify-content: start;
+  border: 5px;
+  border-color: black;
+}
+.month, .year{
+  position: relative;
+  bottom: -40px;
+  padding-left: 10px;
+  
+}
+
+.delete-button{ 
+  color: red;
+  position: absolute;
+  justify-self: end;
+  text-shadow:  0 0 1px black;
+  padding-left: 10px;
+}
+.delete-button:hover{ 
+  cursor: pointer;
+  transform: scale(1.5);
+}

@@ -1,0 +1,15 @@
+
+.memory {
+  background-color: rgb(7, 100, 100);
+  border-radius: 5px;
+  height: 80px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: azure;
+}
+.body{
+  background-color: cadetblue;
+}
